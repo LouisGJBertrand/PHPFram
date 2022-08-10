@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0eeae50e42167777e41edf03745c9db7",
+    "content-hash": "5649efd34dc2590dd399eb02335fcdef",
     "packages": [
         {
             "name": "bramus/router",
@@ -56,7 +56,9 @@
                 "source": "https://github.com/bramus/router/tree/1.6.1"
             },
             "time": "2021-11-18T19:24:07+00:00"
-        },
+        }
+    ],
+    "packages-dev": [
         {
             "name": "filp/whoops",
             "version": "2.14.5",
@@ -179,7 +181,6 @@
             "time": "2021-05-03T11:20:27+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

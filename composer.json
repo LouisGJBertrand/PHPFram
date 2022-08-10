@@ -17,9 +17,11 @@
     "require": {
 
         "php": "^7.3.2",
-        "filp/whoops": "^2.14",
         "bramus/router": "^1.6"
 
+    },
+    "require-dev": {
+        "filp/whoops": "^2.14"
     },
     "config": {
         "platform": {
