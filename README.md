@@ -4,4 +4,4 @@ super lightweight php framework
 
 # Installation
 in your terminal
-`composer create-project louisgjbertrand/phpfram`
+`composer create-project -ignore-platform-reqs louisgjbertrand/phpfram`
