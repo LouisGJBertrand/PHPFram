@@ -8,7 +8,7 @@ class MyApp
     public function Start()
     {
 
-        require_once "../routes/routes.php";
+        require_once __DIR__."\\..\\routes\\routes.php";
 
     }
 
