@@ -17,7 +17,7 @@
 
             $httpErrorCode = (string)$exception->getCode();
 
-            if(!in_array($httpErrorCode, HTTPErrorHandling::$ErrorHandlers))
+            if(!in_array($httpErrorCode, \array_keys(HTTPErrorHandling::$ErrorHandlers)))
             {
                 return HTTPErrorHandling::DefaultErrorHandler($exception);
             }
