@@ -17,7 +17,7 @@
     "require": {
 
         "php": "^7.3.2 || ^8.0",
-        "bramus/router": "^1.6"
+        "pecee/simple-router": "^5.0"
 
     },
     "require-dev": {

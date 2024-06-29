@@ -18,6 +18,21 @@
         $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
         $whoops->register();
     }
+
+    /** 
+     * INIT APP Type Behaviors
+     */
+        // Error Logging with Whoops
+    if ($_ENV["APP_TYPE"] == "API-JSON") {
+        header('Content-Type: application/json');
+    }
+    if ($_ENV["APP_TYPE"] == "API") {
+        header('Content-Type: text/plain');
+    }
+    if ($_ENV["APP_TYPE"] == "WWW") {
+        header('Content-Type: text/html');
+    }
+    
     
     /** 
      * INIT App
