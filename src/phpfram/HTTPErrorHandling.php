@@ -9,13 +9,13 @@
 
         public static function RegisterErrorCallback(int $errorCode, callable $callback)
         {
-            HTTPErrorHandling::$ErrorHandlers[$errorCode] = $callback;
+            HTTPErrorHandling::$ErrorHandlers[(string)$errorCode] = $callback;
         }
 
         public static function HandleError(\Exception $exception)
         {
 
-            $httpErrorCode = $exception->getCode();
+            $httpErrorCode = (string)$exception->getCode();
 
             if(!in_array($httpErrorCode, HTTPErrorHandling::$ErrorHandlers))
             {
